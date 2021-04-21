@@ -1,0 +1,113 @@
+.register-form label, .addpatient-form label {
+    font-size: 32px;
+    font-weight: 500;
+    color: #3ab5fb;
+    margin: 10px auto;
+    width: 44%;
+    text-align: left;
+}
+
+#name, #e-mail, #council-dropdown, #reg-num, #speciality-dropdown, #p-name, #p-phone, #p-email, #p-age, #program-dropdown {
+    padding: 20px 25px;
+    margin: 0 0 20px;
+    border: 5px solid #ededed;
+    color: #a6a6a6;
+    border-radius: 10px;
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    width: 40%;
+}
+
+.register-form #council-dropdown, .register-form #speciality-dropdown, .addpatient-form #program-dropdown {
+    width: 44%;
+    background-color: #ffffff;
+    color: #a6a6a6;
+}
+.add-patient .title {
+    font-size: 38px;
+    font-weight: 800;
+    margin: 80px auto 40px;
+    color: #3ab5fb;
+}
+
+.add-patient .close-btn {
+    cursor: pointer;
+    font-size: 35px;
+    color: #3ab5fb;
+    position: relative;
+    top: 30px;
+    left: 500px;
+}
+
+@media(max-width:1100px) {
+
+    .register-form label, .addpatient-form label {
+        width: 55%;
+    }   
+    #name, #e-mail, #council-dropdown, #reg-num, #speciality-dropdown, #p-name, #p-phone, #p-email, #p-age, #program-dropdown {
+        width: 50%;
+    } 
+    .register-form #council-dropdown, .register-form #speciality-dropdown, .addpatient-form #program-dropdown {
+        width: 55%;
+    }    
+    .add-patient .close-btn {
+        left: 450px;
+    }
+}
+
+@media(max-width:768px) {
+
+    .register-form label, .addpatient-form label {
+        font-size: 24px;
+        width: 55%;
+    }
+    
+    #name, #e-mail, #council-dropdown, #reg-num, #speciality-dropdown, #p-name, #p-phone, #p-email, #p-age, #program-dropdown {
+        width: 50%;
+        padding: 15px 20px;
+        font-size: 20px;
+    }
+    
+    .register-form #council-dropdown, .register-form #speciality-dropdown, .addpatient-form #program-dropdown {
+        width: 58%;
+        padding: 15px 20px;
+    }
+    
+    .add-patient .close-btn {
+        left: 300px;
+    }
+    .add-patient .title {
+        font-size: 28px;
+    }
+}
+
+@media(max-width:425px) {
+
+    .add-patient .close-btn {
+        left: 160px;
+    }
+    .add-patient .title {
+        font-size: 28px;
+    }
+    .register-form label, .addpatient-form label {
+        font-size: 24px;
+        width: 85%;
+    }
+    
+    #name, #e-mail, #council-dropdown, #reg-num, #speciality-dropdown, #p-name, #p-phone, #p-email, #p-age, #program-dropdown {
+        font-size: 18px;
+        width: 80%;
+    }
+    
+    .register-form #council-dropdown, .register-form #speciality-dropdown, .addpatient-form #program-dropdown {
+        width: 93%;
+    }
+}
+
+@media(max-width:320px) {
+
+    .add-patient .close-btn {
+        left: 120px;
+    }
+}

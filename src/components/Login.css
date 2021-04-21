@@ -1,0 +1,207 @@
+.login-section, .otp-section, .get-otp, .register, .add-patient {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    align-items: center;
+    font-family: 'Nunito', sans-serif;
+}
+
+.title {
+    font-size: 45px;
+    font-weight: 800;
+    margin: 50px auto;
+    color: #3ab5fb;
+}
+
+.logo {
+    margin: 10rem auto 6rem;
+}
+
+.input-section, .register-form, .addpatient-form {
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 98%;
+}
+
+#input-field {
+    padding: 20px 25px;
+    margin: 0 auto 40px;
+    border: 5px solid #ededed;
+    color: #a6a6a6;
+    border-radius: 10px;
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    width: 40%;
+}
+
+.getotp-btn, .verify-btn, .register-btn, .addpatient-btn {
+    cursor: pointer;
+    font-size: 2rem;
+    background-color: #3ab5fb;
+    color: #ffffff;
+    letter-spacing: 1px;
+    margin: 30px auto;
+    padding: 20px 24px;
+    border-radius: 10px;
+    border: none;
+    width: 44%;
+}
+
+.verify-btn {
+   margin: 0 auto 30px;
+}
+
+.register-btn {
+    margin: 30px auto;
+}
+
+.get-otp .phone {
+    font-size: 1.8rem;
+}
+
+.otp-number, .go-back {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+}
+
+.go-back {
+    width: 43%;
+    justify-content: space-between;
+    margin: 10px auto 50px;
+}
+
+.num1, .num2, .num3, .num4 {
+    height: 80px;
+    width: 80px;
+    border: 3px solid #3ab5fb;
+    border-radius: 10px;
+    margin: 40px 10px;
+}
+
+.goback-link, .timer {
+    font-size: 28px;
+    font-weight: 500;
+    color: #3ab5fb;
+    text-decoration: underline;
+    margin: 0;
+    padding: 0;
+}
+
+.timer {
+    color: #a6a6a6;
+    text-decoration: none;
+}
+
+/* ------- Media queries ------- */
+
+@media(max-width:1100px) {
+
+    .addpatient-btn {
+        padding: 15px 20px;
+        width: 60%;
+    }
+    #input-field {
+        width: 45%;
+    }
+    .go-back {
+        width: 50%;
+    }
+    .getotp-btn, .verify-btn, .register-btn, .addpatient-btn {
+        width: 50%;
+    }
+}
+
+@media(max-width:768px) {
+
+    .register .title {
+        font-size: 32px;
+    }
+    .addpatient-btn {
+        font-size: 1rem;
+        padding: 15px 20px;
+        width: 60%;
+        font-size: 1.3rem;
+    }
+    #input-field {
+        width: 45%;
+        padding: 15px 20px;
+        font-size: 1rem;
+    }
+    .getotp-btn, .verify-btn, .register-btn, .addpatient-btn {
+        width: 50%;
+        padding: 15px 20px;
+        font-size: 1.3rem;
+        margin: 0 auto 20px;
+    }
+    .register-btn {
+        margin: 20px auto;
+        width: 55%;
+    }
+    .get-otp .phone {
+        font-size: 1.2rem;
+    }
+    .num1, .num2, .num3, .num4 {
+        height: 60px;
+        width: 60px;
+    }
+    .goback-link, .timer {
+        font-size: 24px;
+    }    
+}
+
+@media(max-width:425px) {
+
+    .logo {
+        margin: 6rem auto 4rem;
+    }
+    #input-field {
+        padding: 10px 15px;
+        font-size: 16px;
+        width: 60%;
+    }
+    .getotp-btn, .verify-btn, .register-btn, .addpatient-btn {
+        font-size: 1rem;
+        padding: 15px 20px;
+        width: 70%;
+    }
+    .register-btn, .addpatient-btn {
+        width: 80%;
+    }
+    .num1, .num2, .num3, .num4 {
+        height: 45px;
+        width: 45px;
+    }
+    .go-back {
+        width: 70%;
+    }
+    .goback-link, .timer {
+        font-size: 20px;
+    }
+    .register-form, .addpatient-form {
+        width: 95%;
+    }
+    .register .title {
+        font-size: 24px;
+    }
+}
+
+@media(max-width:320px) {
+    
+    #input-field {
+        width: 75%;
+    }
+    .getotp-btn, .verify-btn, .register-btn {
+        width: 85%;
+    }
+    .go-back {
+        width: 80%;
+    }
+}

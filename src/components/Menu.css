@@ -1,0 +1,218 @@
+.menubar, .home, .my-account {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+}
+.home {
+    margin: 100px auto 50px;
+}
+.edit-img {
+    cursor:pointer;
+}
+.close-btn {
+    cursor: pointer;
+    position: relative;
+    font-size: 45px;
+    top: 0;
+    left: 550px;
+    color: #3ab5fb;;
+}
+.nav-links {
+    margin: 100px auto 30px;
+    list-style-type: none;
+    padding: 0;
+}
+.nav-items {
+    margin: 15px auto;
+}
+.nav-items img {
+    margin: 0 10px;
+}
+.nav-items a {
+    cursor: pointer;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    text-decoration: none;
+    color: #000000;
+    font-size: 28px;
+    margin: 20px 10px 0;
+}
+.nav-items:hover {
+    color: #3ab5fb;
+}
+
+.my-account {
+    font-size: 22px;
+    margin: 30px auto 50px;
+}
+.my-account .close-btn {
+    cursor: pointer;
+    position: relative;
+    font-size: 28px;
+    top: 0;
+    left: 350px;
+    color: #3ab5fb;
+}
+.topic {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px 20px;
+}
+.topic .title {
+    font-size: 50px;
+    text-align: left;
+    margin: 0;
+}
+#doctor-details {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 20px;
+}
+#doctor-details label {
+    font-size: 35px;
+    color: #3ab5fb;
+    font-weight: 400;
+    margin: 20px 0;
+    padding: 0;
+}
+/* .doctor-name, .doctor-email, .doctor-speciality {
+    margin: 0 0 25px;
+    padding: 10px;
+    font-size: 34px;
+    font-weight: 400;
+    color: #000000;
+} */
+#doctor-name, #doctor-email, #doctor-speciality, #clinic-name, #doctor-phn {
+    padding: 20px 25px;
+    border-radius: 10px;
+    border: 5px solid #ededed;
+    font-size: 26px;
+    color: #a6a6a6;
+    width: 90%;
+    margin: 10px 0 20px;
+}
+.my-wallet {
+    margin: 40px auto;
+}
+.my-wallet .title {
+    text-align: center;
+    margin: 10px auto 40px;
+}
+.card-container, .totalearning-card, .paidout-card, .patientsreferred-card, .my-wallet {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+.totalearning-card, .paidout-card, .patientsreferred-card {
+    background-color: #cdecfd;
+    width: 350px;
+    height: 200px;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+.total-cash, .paidout-cash, .referredpatients-count {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+}
+.cashout-btn, .home .add-btn, .save-btn {
+    font-size: 2rem;
+    background-color: #3ab5fb;
+    color: #ffffff;
+    letter-spacing: 1px;
+    margin: 0 auto;
+    padding: 20px 25px;
+    border-radius: 10px;
+    border: none;
+    width: 40%;
+    cursor: pointer;
+}
+.save-btn {
+    margin: 50px auto;
+    width: 35%;
+}
+
+@media(max-width:1100px) {
+    
+    .save-btn {
+        width: 45%;
+    }
+}
+
+@media(max-width:768px) {
+
+    .close-btn {
+        font-size: 35px;
+        left: 380px;
+    }
+    .my-account {
+        align-items: flex-start;
+    }
+    .topic .title {
+        font-size: 30px;
+    }
+    .d-name, .email, .speciality, .doctor-details label {
+        font-size: 25px;
+    }   
+    .doctor-name, .doctor-email, .doctor-speciality {
+        margin: 0 0 15px;
+        font-size: 24px;
+    }
+    #clinic-name, #doctor-phn {
+        padding: 15px 20px;
+    }
+    .my-wallet .title {
+        font-size: 30px;
+    }
+    .cashout-btn, .home .add-btn, .save-btn {
+        font-size: 1rem;
+        padding: 15px 20px;
+        width: 50%;
+    }
+}
+
+@media(max-width:425px) {
+
+    .home .title {
+        font-size: 28px;
+    }
+    .close-btn {
+        left: 240px;
+    }
+    .cashout-btn, .home .add-btn, .save-btn {
+        width: 70%;
+    }
+    .my-wallet .title {
+        font-size: 26px;
+    }
+}
+
+@media(max-width:320px) {
+
+    .close-btn {
+        font-size: 35px;
+        left: 200px;
+    }
+    .home .title {
+        font-size: 24px;
+    }
+    .my-wallet .title{
+        font-size: 26px;
+    }
+    .totalearning-card, .paidout-card, .patientsreferred-card {
+        width: 300px;
+    }
+    .cashout-btn {
+        width: 85%;
+    }
+}
